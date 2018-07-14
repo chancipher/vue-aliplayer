@@ -10,5 +10,5 @@ module.exports = {
   },
   extract: false,
   // this will not copy ./static/** to ./dist/**
-  copy: false
+  copy: true 
 }
