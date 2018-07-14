@@ -395,7 +395,6 @@
         default: "//g.alicdn.com/de/prismplayer/2.8.2/aliplayer-min.js"
       },
 
-
     },
     data() {
       return {

@@ -12,11 +12,13 @@
     "build": "npm run build:cjs && npm run build:umd",
     "build:cjs": "vbuild -c vbuild.build.js --format cjs",
     "build:umd": "vbuild -c vbuild.build.js --format umd",
-    "dev": "vbuild -c vbuild.dev.js -d"
+    "dev": "vbuild -c vbuild.dev.js -d",
+    "prepublish": "npm run build",
+    "postpublish": "npm run deploy"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/slacrey/vue-aliplayer.git"
+    "url": "git+https://github.com/chancipher/vue-aliplayer.git"
   },
   "keywords": [
     "vue",
@@ -25,9 +27,9 @@
   "author": "linfeng (237242115@qq.com)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/slacrey/vue-aliplayer/issues"
+    "url": "https://github.com/chancipher/vue-aliplayer/issues"
   },
-  "homepage": "https://github.com/slacrey/vue-aliplayer#readme",
+  "homepage": "https://github.com/chancipher/vue-aliplayer#readme",
   "devDependencies": {
     "vbuild": "^6.0.0"
   },
