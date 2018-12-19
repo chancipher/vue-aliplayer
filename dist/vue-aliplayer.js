@@ -70,7 +70,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
 /******/
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "https://github.com/slacrey/vue-aliplayer#readme/";
+/******/ 	__webpack_require__.p = "https://github.com/chancipher/vue-aliplayer#readme/";
 /******/
 /******/ 	// Load entry module and return exports
 /******/ 	return __webpack_require__(__webpack_require__.s = 14);
@@ -135,7 +135,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     aliplayerSdkPath: {
       // Aliplayer 代码的路径
       type: String,
-      default: "//g.alicdn.com/de/prismplayer/2.7.1/aliplayer-min.js"
+      default: "//g.alicdn.com/de/prismplayer/2.7.4/aliplayer-min.js"
     },
     autoplay: {
       type: Boolean,
@@ -202,8 +202,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
       default: false
     },
     x5_orientation: {
-      type: Number,
-      default: 2
+      type: String,
+      default: "portraint"
+    },
+    x5LandscapeAsFullScreen: {
+      type: String,
+      default: "false"
+    },
+    skinLayout: {
+      type: Array
     },
     autoPlayDelay: {
       type: Number,
@@ -298,6 +305,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             x5_type: _this.x5_type,
             x5_fullscreen: _this.x5_fullscreen,
             x5_orientation: _this.x5_orientation,
+            x5LandscapeAsFullScreen: _this.x5LandscapeAsFullScreen,
+            skinLayout: _this.skinLayout,
             autoPlayDelay: _this.autoPlayDelay,
             autoPlayDelayDisplayText: _this.autoPlayDelayDisplayText
           });
@@ -2355,7 +2364,7 @@ function isnan (val) {
 
 exports = module.exports = __webpack_require__(5)(undefined);
 // imports
-exports.push([module.i, "@import url(//g.alicdn.com/de/prismplayer/2.7.1/skins/default/aliplayer-min.css);", ""]);
+exports.push([module.i, "@import url(//g.alicdn.com/de/prismplayer/2.7.4/skins/default/aliplayer-min.css);", ""]);
 
 // module
 exports.push([module.i, "\n", ""]);

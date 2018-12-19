@@ -13,7 +13,7 @@ export default {
     aliplayerSdkPath: {
       // Aliplayer 代码的路径
       type: String,
-      default: "//g.alicdn.com/de/prismplayer/2.7.1/aliplayer-min.js"
+      default: "//g.alicdn.com/de/prismplayer/2.7.4/aliplayer-min.js"
     },
     autoplay: {
       type: Boolean,
@@ -80,8 +80,15 @@ export default {
       default: false
     },
     x5_orientation: {
-      type: Number,
-      default: 2
+      type: String,
+      default: "portraint"
+    },
+    x5LandscapeAsFullScreen: {
+      type: String,
+      default: "false"
+    },
+    skinLayout: {
+      type: Array
     },
     autoPlayDelay: {
       type: Number,
@@ -176,6 +183,8 @@ export default {
             x5_type: _this.x5_type,
             x5_fullscreen: _this.x5_fullscreen,
             x5_orientation: _this.x5_orientation,
+            x5LandscapeAsFullScreen: _this.x5LandscapeAsFullScreen,
+            skinLayout: _this.skinLayout,
             autoPlayDelay: _this.autoPlayDelay,
             autoPlayDelayDisplayText: _this.autoPlayDelayDisplayText
           });
@@ -310,5 +319,5 @@ export default {
 </script>
 
 <style>
-@import url(//g.alicdn.com/de/prismplayer/2.7.1/skins/default/aliplayer-min.css);
+@import url(//g.alicdn.com/de/prismplayer/2.7.4/skins/default/aliplayer-min.css);
 </style>
