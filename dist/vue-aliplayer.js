@@ -135,7 +135,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     aliplayerSdkPath: {
       // Aliplayer 代码的路径
       type: String,
-      default: "//g.alicdn.com/de/prismplayer/2.7.4/aliplayer-min.js"
+      default: "//g.alicdn.com/de/prismplayer/2.8.8/aliplayer-min.js"
     },
     autoplay: {
       type: Boolean,
@@ -148,6 +148,10 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     playsinline: {
       type: Boolean,
       default: false
+    },
+    mediaType: {
+      type: String,
+      default: "video"
     },
     width: {
       type: String,
@@ -292,6 +296,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             isLive: _this.isLive,
             playsinline: _this.playsinline,
             format: _this.format,
+            mediaType: _this.mediaType,
             width: _this.width,
             height: _this.height,
             controlBarVisibility: _this.controlBarVisibility,
@@ -2364,7 +2369,7 @@ function isnan (val) {
 
 exports = module.exports = __webpack_require__(5)(undefined);
 // imports
-exports.push([module.i, "@import url(//g.alicdn.com/de/prismplayer/2.7.4/skins/default/aliplayer-min.css);", ""]);
+exports.push([module.i, "@import url(//g.alicdn.com/de/prismplayer/2.8.8/skins/default/aliplayer-min.css);", ""]);
 
 // module
 exports.push([module.i, "\n", ""]);
