@@ -392,7 +392,7 @@
       aliplayerSdkPath: {
         // Aliplayer 代码的路径
         type: String,
-        default: "//g.alicdn.com/de/prismplayer/2.8.2/aliplayer-min.js"
+        default: "//g.alicdn.com/de/prismplayer/2.9.3/aliplayer-min.js"
       },
 
     },
@@ -712,5 +712,5 @@
 </script>
 
 <style>
-  @import url(//g.alicdn.com/de/prismplayer/2.8.2/skins/default/aliplayer-min.css);
+  @import url(//g.alicdn.com/de/prismplayer/2.9.3/skins/default/aliplayer-min.css);
 </style>
